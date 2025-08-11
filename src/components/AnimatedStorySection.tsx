@@ -4,12 +4,7 @@ import { motion, Variants, Transition } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 import Image from 'next/image';
 
-interface AnimatedStorySectionProps {
-  // If content is fixed, you don't need 'children'.
-  // If you pass specific props, define them here.
-}
-
-const AnimatedStorySection = (props: AnimatedStorySectionProps) => {
+const AnimatedStorySection = () => {
   const [storyRef, storyInView] = useInView({ triggerOnce: true, threshold: 0.3 });
   
   const sectionVariants: Variants = {

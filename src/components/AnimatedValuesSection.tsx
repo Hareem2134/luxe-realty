@@ -1,12 +1,14 @@
+// src/components/AnimatedValuesSection.tsx
 'use client';
 
 import { motion, Variants, Transition } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { IconDefinition } from '@fortawesome/fontawesome-svg-core';
 import SectionHeader from './SectionHeader';
 
 interface ValueItem {
-  icon: any;
+  icon: IconDefinition;
   title: string;
   description: string;
 }
