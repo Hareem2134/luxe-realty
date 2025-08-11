@@ -1,8 +1,6 @@
-// src/app/about/page.tsx
-// This is a Server Component. DO NOT add 'use client' here.
+// This is a Server Component
 
 import { Metadata } from 'next';
-// Import the new client components from src/components
 import AnimatedStorySection from '@/components/AnimatedStorySection';
 import AnimatedValuesSection from '@/components/AnimatedValuesSection';
 import { faMedal, faHandshake, faLightbulb } from '@fortawesome/free-solid-svg-icons';

@@ -1,17 +1,15 @@
-// src/components/AnimatedStorySection.tsx
-'use client'; // This component requires client-side functionality
+'use client';
 
 import { motion, Variants, Transition } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 import Image from 'next/image';
-import { ReactNode } from 'react'; // ReactNode is for the children prop if you pass general JSX.
 
 interface AnimatedStorySectionProps {
   // If content is fixed, you don't need 'children'.
   // If you pass specific props, define them here.
 }
 
-const AnimatedStorySection = (props: AnimatedStorySectionProps) => { // Use 'props' if no children
+const AnimatedStorySection = (props: AnimatedStorySectionProps) => {
   const [storyRef, storyInView] = useInView({ triggerOnce: true, threshold: 0.3 });
   
   const sectionVariants: Variants = {

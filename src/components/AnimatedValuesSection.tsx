@@ -1,19 +1,12 @@
-// src/components/AnimatedValuesSection.tsx
-'use client'; // This component requires client-side functionality
+'use client';
 
 import { motion, Variants, Transition } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-// Import specific Font Awesome icons here as needed
-import { faMedal, faHandshake, faLightbulb } from '@fortawesome/free-solid-svg-icons';
-import SectionHeader from './SectionHeader'; // Assuming this is also a 'use client' component
+import SectionHeader from './SectionHeader';
 
-// Define the type for a single value item
 interface ValueItem {
-  icon: any; // Use 'any' here if you can't get a more specific type for Font Awesome IconDefinition,
-            // though typically you'd import IconDefinition from '@fortawesome/fontawesome-svg-core'
-            // For now, `any` might be necessary to resolve the `no-explicit-any` warning later.
-            // A better type would be: import { IconDefinition } from '@fortawesome/fontawesome-svg-core'; icon: IconDefinition;
+  icon: any;
   title: string;
   description: string;
 }
