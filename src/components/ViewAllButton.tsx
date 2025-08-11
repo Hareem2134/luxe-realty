@@ -2,6 +2,7 @@
 
 import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
+import Link from 'next/link';
 
 interface ViewAllButtonProps {
   text: string;
@@ -15,6 +16,8 @@ const ViewAllButton = ({ text, link, delay = 0 }: ViewAllButtonProps) => {
     threshold: 0.3,
   });
 
+  const MotionLink = motion(Link);
+
   return (
     <motion.div
       ref={ref}
@@ -24,12 +27,13 @@ const ViewAllButton = ({ text, link, delay = 0 }: ViewAllButtonProps) => {
       viewport={{ once: true, amount: 0.3 }}
       className="mt-12 text-center"
     >
-      <motion.button
+      <MotionLink
+        href={link}
         whileTap={{ scale: 0.98, y: 2 }}
-        className="px-8 py-3 border-2 border-indigo-600 text-indigo-600 font-medium rounded-lg hover:bg-indigo-600 hover:text-white transition-colors duration-200"
+        className="inline-block px-8 py-3 border-2 border-indigo-600 text-indigo-600 font-medium rounded-lg hover:bg-indigo-600 hover:text-white transition-colors duration-200 font-body" // Apply font-body, use inline-block for proper padding
       >
         {text}
-      </motion.button>
+      </MotionLink>
     </motion.div>
   );
 };

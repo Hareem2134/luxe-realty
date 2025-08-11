@@ -7,11 +7,6 @@ import Image from 'next/image';
 const FinalCTA = () => {
   const [ref, inView] = useInView({ triggerOnce: true, threshold: 0.3 });
 
-  const containerVariants = {
-    hidden: { opacity: 0, y: 50 },
-    visible: { opacity: 1, y: 0, transition: { duration: 0.6, ease: [0.42, 0, 0.58, 1] } },
-  };
-
   return (
     <section className="relative py-32 overflow-hidden">
       <div className="absolute inset-0">

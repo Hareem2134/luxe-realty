@@ -1,5 +1,6 @@
 import { Metadata } from 'next';
 import ClientSectionHeader from '../../components/SectionHeader';
+import Image from 'next/image';
 
 export const metadata: Metadata = {
   title: 'Blog | LUXE Realty',
@@ -42,7 +43,7 @@ export default function BlogPage() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-8">
           {blogPosts.map((post) => (
             <div key={post.id} className="bg-gray-50 rounded-xl shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-300">
-              <img
+              <Image
                 src={post.image}
                 alt={post.title}
                 width={600}
