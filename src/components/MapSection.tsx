@@ -23,17 +23,17 @@ const mapSectionVariants: Variants = {
 const MapSection = () => {
   const [ref, inView] = useInView({ triggerOnce: true, threshold: 0.3 });
 
-  const cityMapPlaceholderUrl = "https://images.unsplash.com/photo-1577901140683-113aa07b949c?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D";
+  const cityMapPlaceholderUrl = "/google-map-of-united-arab-emirates.webp";
 
 
   return (
     <section className="relative py-20 bg-gray-900 text-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <SectionHeader
-          title="Explore"
-          highlightWord="By Map"
-          subtitle="Discover properties visually with our interactive map. Draw custom search areas to find exactly what you're looking for."
-        />
+        <h2 className="justify-center text-center max-w-7xl mx-auto px-4 sm:px-6 lg:px-8  text-4xl font-bold">
+          <span className="text-gray-100">Explore</span>{" "}
+          <span className="text-indigo-900">By Map</span>
+        </h2>
+        <p className='justify-center text-center mt-4 max-w-2xl mx-auto text-gray-300 mb-12'>Discover properties visually with our interactive map. Draw custom search areas to find exactly what you're looking for.</p>
 
         <motion.div
           ref={ref}
@@ -61,7 +61,7 @@ const MapSection = () => {
           </div>
           <Image
             src={cityMapPlaceholderUrl}
-            alt="Interactive Map"
+            alt="Interactive Map Placeholder"
             width={1470}
             height={800}
             className="w-full h-full object-cover"

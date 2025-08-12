@@ -14,21 +14,21 @@ export default function BlogPage() {
       title: 'The Rise of Smart Home Technology in Luxury Properties',
       date: 'October 26, 2023',
       excerpt: 'Explore how smart home features are transforming high-end residences.',
-      image: 'https://images.unsplash.com/photo-1558000780-e3498b8c2538?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80',
+      image: '/smarthomes.webp',
     },
     {
       id: 2,
       title: 'Top 5 Emerging Luxury Neighborhoods for 2024',
       date: 'October 15, 2023',
       excerpt: 'Our experts forecast the next hot spots for luxury real estate investment.',
-      image: 'https://images.unsplash.com/photo-1549514782-b7d4135d5622?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80',
+      image: '/luxury-neigbourhoods.jpeg',
     },
     {
       id: 3,
       title: 'Sustainable Luxury: Eco-Friendly Homes on the Rise',
       date: 'September 28, 2023',
       excerpt: 'Discover the growing trend of environmentally conscious luxury properties.',
-      image: 'https://images.unsplash.com/photo-1627915598858-a53b7c8f74e9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80',
+      image: '/ecofriendly-homes.jpg',
     },
   ];
 
