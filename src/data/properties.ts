@@ -121,7 +121,7 @@ export const dummyTestimonials: TestimonialType[] = [
         text: "Working with LUXE Realty was an exceptional experience. Their attention to detail and understanding of luxury properties in Beverly Hills was unparalleled. We found our dream home faster than we imagined.",
         author: 'Sarah Johnson',
         title: 'Tech Executive',
-        image: 'https://randomuser.me/api/portraits/women/65.jpg',
+        image: '/65.webp',
         rating: 5
     },
     {
@@ -129,7 +129,7 @@ export const dummyTestimonials: TestimonialType[] = [
         text: "The LUXE team's market knowledge and network gave us access to properties we wouldn't have found otherwise. Their technology platform made the entire process seamless, from first search to closing.",
         author: 'Michael Chen',
         title: 'Investment Banker',
-        image: 'https://randomuser.me/api/portraits/men/32.jpg',
+        image: '/32.webp',
         rating: 5
     },
     {
@@ -137,7 +137,7 @@ export const dummyTestimonials: TestimonialType[] = [
         text: "As international buyers, we needed help navigating the US luxury market. LUXE's agents were knowledgeable, patient, and connected us with exactly what we were looking for in Miami. The map search tool was incredibly useful.",
         author: 'Elena Petrov',
         title: 'International Buyer',
-        image: 'https://randomuser.me/api/portraits/women/44.jpg',
+        image: '/44.webp',
         rating: 4.5
     }
 ];
