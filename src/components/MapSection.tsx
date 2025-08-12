@@ -32,7 +32,7 @@ const MapSection = () => {
           <span className="text-gray-100">Explore</span>{" "}
           <span className="text-indigo-900">By Map</span>
         </h2>
-        <p className='justify-center text-center mt-4 max-w-2xl mx-auto text-gray-300 mb-12'>Discover properties visually with our interactive map. Draw custom search areas to find exactly what you're looking for.</p>
+        <p className='justify-center text-center mt-4 max-w-2xl mx-auto text-gray-300 mb-12'>Discover properties visually with our interactive map. Draw custom search areas to find exactly what you&apos;re looking for.</p>
 
         <motion.div
           ref={ref}
@@ -48,7 +48,7 @@ const MapSection = () => {
               </div>
               <h3 className="text-2xl font-bold mb-2 font-heading">Interactive Map Search</h3>
               <p className="text-gray-300 mb-6 font-body">
-                Click below to launch our advanced map interface where you can draw custom search areas&apos; filter listings&apos; and explore neighborhoods.
+                Click below to launch our advanced map interface where you can draw custom search areas, filter listings, and explore neighborhoods.
               </p>
               <motion.button
                 whileTap={{ scale: 0.98, y: 2 }}
