@@ -5,7 +5,6 @@ import { useInView } from 'react-intersection-observer';
 import Image from 'next/image';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faMapMarkedAlt, faDrawPolygon, faLayerGroup, faStreetView } from '@fortawesome/free-solid-svg-icons';
-import SectionHeader from './SectionHeader';
 import ListContainerWrapper, { itemSlideUpVariants } from './ListContainerWrapper';
 
 const mapSectionVariants: Variants = {
@@ -49,7 +48,7 @@ const MapSection = () => {
               </div>
               <h3 className="text-2xl font-bold mb-2 font-heading">Interactive Map Search</h3>
               <p className="text-gray-300 mb-6 font-body">
-                Click below to launch our advanced map interface where you can draw custom search areas, filter listings, and explore neighborhoods.
+                Click below to launch our advanced map interface where you can draw custom search areas&apos; filter listings&apos; and explore neighborhoods.
               </p>
               <motion.button
                 whileTap={{ scale: 0.98, y: 2 }}
